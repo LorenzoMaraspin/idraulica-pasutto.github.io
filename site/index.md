@@ -23,8 +23,8 @@
     <!-- Mapbox APIs -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/flag-icon.min.css" rel="stylesheet" />
+    <link href="https://github.com/LorenzoMaraspin/idraulica-pasutto.github.io/blob/main/site/css/styles.css" rel="stylesheet" />
+    <link href="https://github.com/LorenzoMaraspin/idraulica-pasutto.github.io/blob/main/site/css/flag-icon.min.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -490,16 +490,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <!-- Contact form JS-->
-    <script src="assets/mail/jqBootstrapValidation.js"></script>
-    <script src="assets/mail/contact_me.js"></script>
+    <script src="https://github.com/LorenzoMaraspin/idraulica-pasutto.github.io/blob/main/site/assets/mail/jqBootstrapValidation.js"></script>
+    <script src="https://github.com/LorenzoMaraspin/idraulica-pasutto.github.io/blob/main/site/assets/mail/contact_me.js"></script>
     <!-- Mapbox API JS-->
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <script src="js/test.js"></script>
+    <script src="https://github.com/LorenzoMaraspin/idraulica-pasutto.github.io/blob/main/site/js/scripts.js"></script>
 
 
-
+<!--
     <script src="../jquery.i18n/src/jquery.i18n.js"></script>
     <script src="../jquery.i18n/src/jquery.i18n.messagestore.js"></script>
     <script src="../jquery.i18n/src/jquery.i18n.fallbacks.js"></script>
@@ -507,6 +506,7 @@
     <script src="../jquery.i18n/src/jquery.i18n.parser.js"></script>
     <script src="../jquery.i18n/src/jquery.i18n.emitter.js"></script>
     <script src="../jquery.i18n/src/jquery.i18n.emitter.bidi.js"></script>
+-->
 </body>
 
 </html>
