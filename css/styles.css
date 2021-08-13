@@ -2733,6 +2733,7 @@ fieldset:disabled a.btn {
     box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
 }
 
+
 .btn-light {
     color: #212529;
     background-color: #f8f9fa;
@@ -2965,7 +2966,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-warning:hover {
-    color: #fff;
+    color:black;
     background-color: #fed136;
     border-color: #fed136;
 }
@@ -10529,7 +10530,7 @@ header.masthead .masthead-heading {
 
 section#contact {
     background-color: #212529;
-    background-image: url("../assets/img/map-image.png");
+    background-image: url("");
     background-repeat: no-repeat;
     background-position: center;
 }
