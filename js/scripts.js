@@ -96,6 +96,7 @@ var map = new mapboxgl.Map({
 map.boxZoom.disable();
 map.scrollZoom.disable();
 map.doubleClickZoom.disable();
+map.dragPan.disable();
 // Set text popup
 var nameOffice = "Idraulica Pasutto SAS"
 var label_address = "Indirizzo: "
