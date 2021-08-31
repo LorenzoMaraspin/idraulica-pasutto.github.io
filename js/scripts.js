@@ -102,7 +102,9 @@ var nameOffice = "Idraulica Pasutto SAS"
 var label_address = "Indirizzo: "
 var address = "Via Antonio Canova, 2/a, 34129 Trieste TS"
 var label_schedule = "Orario: "
-var schedule = ""
+var schedule = "Lunedì 08:00 - 16:00 Martedì 08:00 - 16:00 Mercoledì 08:00 - 16:00 Giovedì 08:00 - 16:00 Venerdì 08:00 - 16:00"
+var schedule1 = "Lun, Mar, Mer, Gio, Ven 08:00 - 16:00 <br> Sab e Dom chiuso"
+
 var label_mobile = "Telefono: "
 var mobile = "040 360982"
 
@@ -112,7 +114,7 @@ var mobile = "040 360982"
 var popup = new mapboxgl.Popup({ closeButton: false, closeOnClick: false, className: 'popup-container' })
     .setLngLat([13.784163098149898, 45.65070527661624])
     .setHTML("<strong><p class='text-center'> " + nameOffice + " </strong></p><p><strong> " + label_address + "</strong > " +
-        address + " </p><p><strong>"  + "</p><p><strong>" + label_mobile + "</strong>" + mobile + "</p>")
+        address + " </p><p><strong>"  +label_schedule + "</strong>" +schedule1 +"</p><p><strong>" + label_mobile + "</strong>" + mobile + "</p>")
     .setMaxWidth("300px")
     .addTo(map);
 

@@ -4765,7 +4765,6 @@ input[type=button].btn-block {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
 }
 
@@ -7905,13 +7904,15 @@ button.bg-dark:focus {
 }
 
 .shadow-sm {
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    box-shadow: 0 0.125rem 0.25rem rgba(107, 80, 80, 0.075) !important;
 }
 
 .shadow {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
-
+.shadow1 {
+    box-shadow: 0 0.5rem 1rem rgba(256, 209, 54, 0.50) !important;
+}
 .shadow-lg {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
