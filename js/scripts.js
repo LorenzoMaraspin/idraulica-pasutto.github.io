@@ -3,11 +3,11 @@
  * Copyright 2013-2021 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
  */
-(function($) {
+(function ($) {
     "use strict"; // Start of use strict
 
     // Smooth scrolling using anime.js
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on('click', function() {
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on('click', function () {
         if (
             location.pathname.replace(/^\//, "") ==
             this.pathname.replace(/^\//, "") &&
@@ -30,7 +30,7 @@
     });
 
     // Closes responsive menu when a scroll trigger link is clicked
-    $(".js-scroll-trigger").on('click', function() {
+    $(".js-scroll-trigger").on('click', function () {
         $(".navbar-collapse").collapse("hide");
     });
 
@@ -41,7 +41,7 @@
     });
 
     // Collapse Navbar
-    var navbarCollapse = function() {
+    var navbarCollapse = function () {
         if ($("#mainNav").offset().top > 100) {
             $("#mainNav").addClass("navbar-shrink");
         } else {
@@ -70,7 +70,7 @@
     });
 
     // Scroll to top button appear
-    $(document).scroll(function() {
+    $(document).scroll(function () {
         var scrollDistance = $(this).scrollTop();
         if (scrollDistance > 100) {
             $('.scroll-to-top').fadeIn();
@@ -83,6 +83,7 @@
 
 
 })(jQuery); // End of use strict
+
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibG9sbG8yMyIsImEiOiJjanJqMXF3dXgwN2F1NDRwdGVmcnVjZXVtIn0.b2WMGGKxDkq-pOeVntaG3Q';
 var map = new mapboxgl.Map({
@@ -108,21 +109,32 @@ var schedule1 = "Lun, Mar, Mer, Gio, Ven 08:00 - 16:00 <br> Sab e Dom chiuso"
 var label_mobile = "Telefono: "
 var mobile = "040 360982"
 
+var lang = document.documentElement.lang
+if (lang == "en") {
+    var nameOffice = "Idraulica Pasutto SAS"
+    var label_address = "Address: "
+    var address = "Via Antonio Canova, 2/a, 34129 Trieste TS"
+    var label_schedule = "Hours: "
+    var schedule = "Lunedì 08:00 - 16:00 Martedì 08:00 - 16:00 Mercoledì 08:00 - 16:00 Giovedì 08:00 - 16:00 Venerdì 08:00 - 16:00"
+    var schedule1 = "Mon, Tue, Wed, Thu, Fry 08:00 - 16:00 <br> Sat e Sun chiuso"
 
+    var label_mobile = "Phone: "
+    var mobile = "040 360982"
+}
 
 //Declare popup and set style
 var popup = new mapboxgl.Popup({ closeButton: false, closeOnClick: false, className: 'popup-container' })
     .setLngLat([13.784163098149898, 45.65070527661624])
     .setHTML("<strong><p class='text-center'> " + nameOffice + " </strong></p><p><strong> " + label_address + "</strong > " +
-        address + " </p><p><strong>"  +label_schedule + "</strong>" +schedule1 +"</p><p><strong>" + label_mobile + "</strong>" + mobile + "</p>")
+        address + " </p><p><strong>" + label_schedule + "</strong>" + schedule1 + "</p><p><strong>" + label_mobile + "</strong>" + mobile + "</p>")
     .setMaxWidth("300px")
     .addTo(map);
 
 
 var marker1 = new mapboxgl.Marker({
-        color: "#dc3545",
-        draggable: true
-    })
+    color: "#dc3545",
+    draggable: true
+})
     .setLngLat([13.784163098149898, 45.65070527661624])
     .setPopup(popup)
     .addTo(map);

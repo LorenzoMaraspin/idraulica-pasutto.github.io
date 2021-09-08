@@ -6480,6 +6480,11 @@ a.close.disabled {
     width: 100%;
     margin-right: -100%;
     -webkit-backface-visibility: hidden;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     backface-visibility: hidden;
     transition: transform 0.6s ease-in-out;
 }
@@ -6634,12 +6639,11 @@ a.close.disabled {
 .carousel-caption {
     position: absolute;
     right: 15%;
-    bottom: 20px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 15%;
     z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
+    color: #fed136;
     text-align: center;
 }
 
@@ -10248,7 +10252,6 @@ img::-moz-selection {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
         border: none;
-        background-color: transparent;
         transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
     }
     #mainNav .navbar-brand {
@@ -10280,11 +10283,11 @@ img::-moz-selection {
 }
 
 header.masthead {
+    background-image: url("../assets/img/background/pexels-steve-johnson-861414.jpg");
     padding-top: 10.5rem;
     padding-bottom: 6rem;
     text-align: center;
     color: #fed136;
-    background-image: url("../assets/img/bg.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
